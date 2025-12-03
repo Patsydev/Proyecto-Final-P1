@@ -150,17 +150,19 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 2. Compila el proyecto:
    ```bash
-   javac -cp "src/lib/*:src" -d out src/ui/Main.java src/**/*.java
+   # En Linux/Mac:
+   javac -cp "src/lib/*:src" -d out src/ui/*.java src/model/*.java src/repository/*.java src/factory/*.java src/db/*.java
    ```
 
 3. Ejecuta la aplicación:
    ```bash
+   # En Linux/Mac:
    java -cp "src/lib/*:out" ui.Main
    ```
 
 **En Windows, usa punto y coma (;) en lugar de dos puntos (:):**
 ```bash
-javac -cp "src/lib/*;src" -d out src/ui/Main.java src/**/*.java
+javac -cp "src/lib/*;src" -d out src/ui/*.java src/model/*.java src/repository/*.java src/factory/*.java src/db/*.java
 java -cp "src/lib/*;out" ui.Main
 ```
 
